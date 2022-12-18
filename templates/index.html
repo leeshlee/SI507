@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>"Steam" or "Epic Games"</title>
+</head>
+<body>
+
+    <h1> Compare game prices between Steam and Epic Games</h1>
+    <form action="/result" method="POST">
+        <p>
+            <br/>Search game title to compare price: <input name="search_term" type="text"/><br/>
+        </p>
+        <p>
+            Choose the number of games you want to see:
+            <select name="game_num">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br/><br/>
+        </p>
+
+        <input type="submit" value="Search"/>
+    </form>
+</body>
+</html>

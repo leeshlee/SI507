@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>Results</title>
+    <style>
+        table, th, td {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1> Results! </h1>
+    <table style="width: auto">
+        <h2> STEAM </h2>
+        <tr>
+            <th>Title</th>
+            <th>Original Price</th>
+            <th>Discount Price</th>
+            
+        </tr>
+        {% for game in results_steam_final %}
+        <tr>
+            <th>{{game[0]}}</th>
+            <th>{{game[1]}}</th>
+            <th>{{game[2]}}</th>
+            
+        </tr>
+        {% endfor %}
+    </table>
+
+    <table style="width: auto">
+        <h2> EPIC GAMES </h2>
+        <tr>
+            <th>Title</th>
+            <th>Original Price</th>
+            <th>Discount Price</th>
+            
+        </tr>
+        {% for game in results_epic_final %}
+        <tr>
+            <th>{{game[0]}}</th>
+            <th>{{game[1]}}</th>
+            <th>{{game[2]}}</th>
+        </tr>
+        {% endfor %}
+    </table>
+
+    
+</body>
+</html>
